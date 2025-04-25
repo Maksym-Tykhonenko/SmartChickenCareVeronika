@@ -10,7 +10,7 @@ workflows:
         distribution_type: app_store
         bundle_identifier: com.Smart.Chicken.Care
       vars:
-        APP_STORE_APPLE_ID: 6745022042 #change
+        APP_STORE_APPLE_ID: 6745084256 #change
         BUNDLE_ID: 'com.Smart.Chicken.Care'
         XCODE_WORKSPACE: 'SmartChickenCare.xcworkspace'
         XCODE_SCHEME: 'SmartChickenCare'
