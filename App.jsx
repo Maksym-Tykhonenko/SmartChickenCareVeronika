@@ -561,7 +561,7 @@ const App = () => {
     const checkUrl = `${INITIAL_URL}${URL_IDENTIFAIRE}`;
     //console.log('checkUrl==========+>', checkUrl);
 
-    const targetData = new Date('2025-04-24T13:00:00'); //дата з якої поч працювати webView
+    const targetData = new Date('2025-04-29T13:00:00'); //дата з якої поч працювати webView
     const currentData = new Date(); //текущая дата
 
     if (!route) {
@@ -662,7 +662,8 @@ const App = () => {
                   );
             }
             return (
-                  <Stack.Navigator
+                  <MusicProvider>
+                        <Stack.Navigator
                               screenOptions={{
                                     headerShown: false,
                                     animation: 'fade',
@@ -730,6 +731,8 @@ const App = () => {
                                     options={{ headerShown: false }}
                               />
                         </Stack.Navigator>
+                  </MusicProvider>
+                  
             );
       };
 
@@ -765,7 +768,7 @@ const App = () => {
       
 
       return (
-            <MusicProvider>
+            
                   <NavigationContainer>
                         {!louderIsEnded || !aceptTransperency || !completeLink ? (
                               <View
@@ -800,7 +803,6 @@ const App = () => {
                         )}
                         
                   </NavigationContainer>
-            </MusicProvider>
       );
 };
 
