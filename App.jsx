@@ -561,7 +561,7 @@ const App = () => {
     const checkUrl = `${INITIAL_URL}${URL_IDENTIFAIRE}`;
     //console.log('checkUrl==========+>', checkUrl);
 
-    const targetData = new Date('2025-04-29T13:00:00'); //дата з якої поч працювати webView
+    const targetData = new Date('2025-04-30T13:00:00'); //дата з якої поч працювати webView
     const currentData = new Date(); //текущая дата
 
     if (!route) {
@@ -711,7 +711,7 @@ const App = () => {
                                     options={{ headerShown: false }}
                               />
                               <Stack.Screen
-                                    name="ChickenGameRoute"
+                                    name="ChickenGameRoutex"////////////////////////////////////////////////
                                     component={ChickenGameRoute}
                                     options={{ headerShown: false }}
                               />
@@ -721,7 +721,7 @@ const App = () => {
                                     options={{ headerShown: false }}
                               />
                               <Stack.Screen
-                                    name="AppSettingsRoute"
+                                    name="AppSettingsRoutexxx"//////////////////////////////////////////////
                                     component={AppSettingsRoute}
                                     options={{ headerShown: false }}
                               />
